@@ -1,0 +1,8 @@
+
+dispatch minecraft:storage[idied:in] to struct In {
+
+}
+
+dispatch minecraft:storage[idied:out] to struct Out {
+
+}

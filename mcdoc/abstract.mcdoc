@@ -1,0 +1,8 @@
+
+dispatch minecraft:storage[idied:abstract/in] to struct AbstractIn {
+
+}
+
+dispatch minecraft:storage[idied:abstract/out] to struct AbstractOut {
+
+}

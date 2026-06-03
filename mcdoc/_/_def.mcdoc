@@ -1,0 +1,24 @@
+
+struct VariableRegister {
+    [string]: any
+}
+dispatch minecraft:storage[idied:_] to struct {
+    /// top level
+    t: VariableRegister,
+    /// impl
+    v: VariableRegister,
+    /// util
+    u: VariableRegister,
+    /// in-scope temp
+    x: VariableRegister,
+    // data
+    data: struct PrivateData {
+        
+    }
+}
+dispatch minecraft:storage[idied:_/in] to struct {
+    [any]: any
+}
+dispatch minecraft:storage[idied:_/out] to struct {
+    [any]: any
+}
