@@ -3,7 +3,6 @@
 # _/main/tick
 #--------------------
 
-say hi
 data modify storage pdata:in set.value.Pos set from entity @s Pos 
 data modify storage pdata:in set.value.Rotation set from entity @s Rotation
 data modify storage pdata:in set.value.Dimension set from entity @s Dimension
