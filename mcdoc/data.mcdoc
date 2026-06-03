@@ -1,4 +1,7 @@
 
 dispatch minecraft:storage[idied:data] to struct Data {
-
+    /// If true, 'death' hook location/context will be accurate even if 'immediate_respawn' gamerule is enabled.
+    /// If false, 'death' hook location/context will be at the point of player respawn (instead of death) if 'immediate_respawn' gamerule is enabled.
+    /// This value is a READ-ONLY indicator, not a configuration option.
+    immediate_respawn_supported: boolean
 }
