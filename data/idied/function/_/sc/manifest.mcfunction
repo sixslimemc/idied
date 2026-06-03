@@ -8,8 +8,8 @@ data modify storage slimecore:in manifest.pack.author_id set value "sixslime"
 data modify storage slimecore:in manifest.pack.version set value {major:0, minor:1, patch:0}
 data modify storage slimecore:in manifest.pack.url set value "https://github.com/sixslimemc/idied/releases/download/v0.1.0/sixslime.idied.0.1.0.zip"
 
-data modify storage slimecore:in manifest.pack.display.name set value "TODO: NAME"
-data modify storage slimecore:in manifest.pack.display.summary set value "TODO: DESC"
+data modify storage slimecore:in manifest.pack.display.name set value "IDied"
+data modify storage slimecore:in manifest.pack.display.summary set value "Provides on-death ond on-respawn hooks."
 data modify storage slimecore:in manifest.pack.display.author_name set value "SixSlime"
 
 data modify storage slimecore:in manifest.pack.display.links.author set value "https://github.com/sixslimemc"
