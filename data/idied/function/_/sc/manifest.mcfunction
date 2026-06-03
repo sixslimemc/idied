@@ -17,7 +17,7 @@ data modify storage slimecore:in manifest.pack.display.links.info set value "htt
 data modify storage slimecore:in manifest.pack.display.links.versions set value "https://github.com/sixslimemc/idied/releases"
 
 data modify storage slimecore:in manifest.pack.entrypoints set value []
-data modify storage slimecore:in manifest.pack.entrypoints append value {id:"main"}
+data modify storage slimecore:in manifest.pack.entrypoints append value {id:"main", after:[{pack_ref:"pdata", id:"main"}]}
 # data modify storage slimecore:in manifest.pack.entrypoints append value {id:"ID", before:[{pack_ref:"PACK", id:"ID"}]}
 
 data modify storage slimecore:in manifest.pack.preload_entrypoints set value []
@@ -30,8 +30,10 @@ data modify storage slimecore:in manifest.pack.abstract_implementations set valu
 # data modify storage slimecore:in manifest.pack.abstract_implementations append value {pack_ref:"PACK", id:"ID"}
 
 data modify storage slimecore:in manifest.pack.dependencies set value []
-# data modify storage slimecore:in manifest.pack.dependencies append value {pack_id:"DEPENDENCY", author_id:"sixslime", optional:false, version:{major:0, minor:1}, download:{url:"https://github.com/sixslimemc/DEPENDENCY/releases/download/v0.1.0/sixslime.DEPENDENCY.0.1.0.zip", version:{major:0, minor:1, patch:0}}}
 
-data modify storage slimecore:in manifest.pack.is_library set value false
+# 'sixslime.pdata' for immediate_respawn gamerule support:
+data modify storage slimecore:in manifest.pack.dependencies append value {pack_id:"pdata", author_id:"sixslime", optional:true, version:{major:0, minor:1}, download:{url:"https://github.com/sixslimemc/pdata/releases/download/v0.1.0/sixslime.pdata.0.1.0.zip", version:{major:0, minor:1, patch:0}}}
+
+data modify storage slimecore:in manifest.pack.is_library set value true
 
 function slimecore:api/manifest

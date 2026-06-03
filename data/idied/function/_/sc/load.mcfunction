@@ -5,6 +5,7 @@ scoreboard objectives add _idied dummy
 scoreboard objectives add _idied.death deathCount
 scoreboard objectives add _idied.dead dummy
 
+
 # DEBUG
 scoreboard players reset *init _idied
 
