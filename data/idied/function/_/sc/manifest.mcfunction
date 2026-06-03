@@ -18,16 +18,10 @@ data modify storage slimecore:in manifest.pack.display.links.versions set value 
 
 data modify storage slimecore:in manifest.pack.entrypoints set value []
 data modify storage slimecore:in manifest.pack.entrypoints append value {id:"main", after:[{pack_ref:"pdata", id:"main"}]}
-# data modify storage slimecore:in manifest.pack.entrypoints append value {id:"ID", before:[{pack_ref:"PACK", id:"ID"}]}
 
 data modify storage slimecore:in manifest.pack.preload_entrypoints set value []
-# data modify storage slimecore:in manifest.pack.preload_entrypoints append value {id:"ID", before:[{pack_ref:"PACK", id:"ID"}]}
-
 data modify storage slimecore:in manifest.pack.abstract_declarations set value []
-# data modify storage slimecore:in manifest.pack.abstract_declarations append value {id:"ID"}
-
 data modify storage slimecore:in manifest.pack.abstract_implementations set value []
-# data modify storage slimecore:in manifest.pack.abstract_implementations append value {pack_ref:"PACK", id:"ID"}
 
 data modify storage slimecore:in manifest.pack.dependencies set value []
 
