@@ -7,9 +7,10 @@ data modify storage pdata:in get.path set value "data._idied.imre"
 function pdata:self/get
 data modify storage idied:_ t.imre.data set from storage pdata:out get.result
 
-data modify storage idied:_ t.imre.player.Pos set from entity @s Pos
-data modify storage idied:_ t.imre.player.Rotation set from entity @s Rotation
-data modify storage idied:_ t.imre.player.Dimension set from entity @s Dimension
+data modify storage idied:_ x.player set from entity @s
+data modify storage idied:_ t.imre.player.Pos set from storage idied:_ x.player.Pos
+data modify storage idied:_ t.imre.player.Rotation set from storage idied:_ x.player.Rotation
+data modify storage idied:_ t.imre.player.Dimension set from storage idied:_ x.player.Dimension
 
 data modify storage idied:_ t.imre.death_dim set from storage idied:_ t.imre.data.Dimension
 data modify storage idied:_ t.imre.cur_dim set from storage idied:_ t.imre.player.Dimension
