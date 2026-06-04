@@ -3,10 +3,12 @@
 # _/main/tick
 #--------------------
 
-execute store result storage pdata:in set.index int 1 run scoreboard players get @s pdata.index
-data modify storage pdata:_ x.player set from entity @s
-data modify storage pdata:in set.value.Dimension set from storage pdata:_ x.player.Dimension
-data modify storage pdata:in set.value.Pos set from storage pdata:_ x.player.Pos
-data modify storage pdata:in set.value.Rotation set from storage pdata:_ x.player.Rotation
-data modify storage pdata:in set.path set value "_idied.imre"
-function pdata:index/set
+execute store result storage idied:_ t.set_imre_data.index int 1 run scoreboard players get @s pdata.index
+data modify storage idied:_ x.player set from entity @s
+data modify storage idied:_ t.set_imre_data.value.Pos set from storage idied:_ x.player.Pos
+data modify storage idied:_ t.set_imre_data.value.Dimension set from storage idied:_ x.player.Dimension
+data modify storage idied:_ t.set_imre_data.value.Rotation set from storage idied:_ x.player.Rotation
+
+function idied:_/main/player/set_imre_data/set with storage idied:_ t.set_imre_data
+
+data remove storage idied:_ t.set_imre_data
