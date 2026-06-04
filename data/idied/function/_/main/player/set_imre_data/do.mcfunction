@@ -8,8 +8,5 @@ data modify storage pdata:_ x.player set from entity @s
 data modify storage pdata:in set.value.Dimension set from storage pdata:_ x.player.Dimension
 data modify storage pdata:in set.value.Pos set from storage pdata:_ x.player.Pos
 data modify storage pdata:in set.value.Rotation set from storage pdata:_ x.player.Rotation
-# data modify storage pdata:in set.value.Dimension set from entity @s Dimension
-# execute summon marker run function idied:_/main/player/set_imre_data/proxy
-
 data modify storage pdata:in set.path set value "_idied.imre"
 function pdata:index/set
