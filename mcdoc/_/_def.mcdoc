@@ -22,3 +22,11 @@ dispatch minecraft:storage[idied:_/in] to struct {
 dispatch minecraft:storage[idied:_/out] to struct {
     [any]: any
 }
+
+dispatch pdata:player_data["_idied"] to struct {
+    imre: struct {
+        Pos: [double] @ 3,
+        Rotation: [float] @ 2,
+        Dimension: #[id="dimension"] string,
+    }
+}
