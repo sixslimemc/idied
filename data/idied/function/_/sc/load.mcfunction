@@ -13,8 +13,6 @@ scoreboard players reset *init _idied
 
 execute unless score *init _idied matches 1 run function idied:_/sc/init
 
-# set data:
-
 # immediate_respawn_supported:
 data modify storage idied:data immediate_respawn_supported set value false
 execute if score *installed.pdata _idied matches 1 run data modify storage idied:data immediate_respawn_supported set value true
