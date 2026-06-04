@@ -8,9 +8,6 @@ scoreboard objectives add _idied.dead dummy
 # check optional dependencies:
 execute store success score *installed.pdata _idied if data storage slimecore:data build.aux.pack_map.pdata
 
-# DEBUG
-scoreboard players reset *init _idied
-
 execute unless score *init _idied matches 1 run function idied:_/sc/init
 
 # immediate_respawn_supported:
