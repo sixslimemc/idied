@@ -6,7 +6,7 @@ scoreboard objectives add _idied.death deathCount
 scoreboard objectives add _idied.dead dummy
 
 # check optional dependencies:
-execute store success score *installed.pdata _idied if data storage slimecore:data build.aux.pack_map.pdata
+execute store success score *installed.pdata _idied if data storage slimecore:data build.packs[{author_id:"sixslime", pack_id:"pdata"}]
 
 execute unless score *init _idied matches 1 run function idied:_/sc/init
 
